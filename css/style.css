@@ -1,0 +1,564 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0eaea;
+}
+
+.header img {
+    width: 100px; /* Adjust the width of the logo */
+    height: auto;
+}
+
+.header h1 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+.header img {
+  width: 100px; /* Adjust the width of the logo */
+  height: auto;
+}
+
+.header h1 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.cursive-font {
+  font-family: "Sofia", sans-serif;}
+
+.header {
+  background-color: #8e2c9f;
+  color: white;
+  padding: 0px;
+  text-align: center;
+}
+
+.logo {
+  float: left;
+  padding-left: 600px;
+}
+
+.img{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.name {
+  float: right;
+  padding-top: 10px;
+  font-size: 20px;
+  padding-right: 900px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #b5b1b1;
+  text-align: center; /* Center align the menu items */
+}
+
+.topnav .search-container {
+  float: right; /* Float the search container to the right */
+  margin-right: 16px; /* Add margin to the right */
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  padding: 6px 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav a {
+  display: inline-block; /* Display menu items as inline-block */
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #b5b1b1;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #848181;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #a3a5a6;
+  color: rgb(112, 48, 118);
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #a3a2a2;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ffffff;  
+  }
+}
+
+/*PROFILE PAGE */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.user-details {
+  text-align: left; /* Align user details to the left */
+}
+
+
+
+/* Profile information styles */
+.profile-info {
+  display: flex;
+  margin-top: 20px;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-details h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.user-details p {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+/* User posts styles */
+.user-posts {
+  margin-top: 20px;
+}
+
+.post {
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.post-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-header h2 {
+  font-size: 16px;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.post-actions button {
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #e5e2e2;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Flexbox styles for three columns */
+.column-container {
+  display: flex;
+  padding: 30px;
+}
+
+.column {
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+
+}
+ /* Example styles for columns */
+ .column:nth-child(1) {
+  flex: 20%;
+  background-color: #ffffff;
+  height: 450px;
+  width: 300px;
+}
+
+.column:nth-child(2) {
+  flex: 55%;
+  background-color: #ffffff;
+}
+
+.column:nth-child(3) {
+  flex: 25%;
+  background-color: #ffffff;
+  height: 450px;
+  width: 300px;
+}
+
+/* Suggestion box styles */
+.suggestion-box {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+ /* List group styles */
+ .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-group-item img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.list-group-item .info {
+
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Display name and email in a column */
+}
+
+.list-group-item .info p {
+  margin: 0;
+}
+
+.list-group-item .btn {
+  flex-shrink: 0;
+}
+
+/* View button styles */
+.list-group-item .btn {
+  flex-shrink: 0;
+  width: 20%; /* Set width to 75% */
+  border-radius:10px; /* Set border-radius to 75% */
+  background-color: #8e2c9f;
+  padding-left:20px ;
+  color: rgb(255, 255, 255);
+}
+
+/* Styles for the post dialogue box */
+.post-dialog {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.post-header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.post-description {
+  margin-top: 10px;
+}
+
+.post-actions {
+  margin-top: 10px;
+}
+
+.post-actions button {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.post-actions button i {
+  margin-right: 5px;
+}
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  text-align: center;
+}
+
+
+.btn-profile-view {
+  background-color:#8e2c9f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-profile-view:hover {
+  background-color:#8e2c9f;
+}
+
+.logo {
+  float: left;
+  padding-left: 800px; /* Adjust the padding as needed */
+}
+
+/*POST CRETAING*/
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*PROFILE*/
+.div1{
+  padding-top: 40px;
+  padding-left: 500px;
+  padding-bottom: 50px;
+}
+.profile-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding-left: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  height: 500px;
+  width: 900px;
+  background-color: #ffffff;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-details h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-description p {
+  margin: 0;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-links a {
+  margin-right: 10px;
+}
+
+/* CSS for footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #e5e2e2;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Additional CSS styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px; /* Position it below the top navigation bar */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Modal close button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\css\\style.css">
+    </head>
+    <body>
+        
+        <div class="header clearfix">
+            <div class="name">
+                <h3 class="cursive-font">EduHub</h3>
+            </div>
+        </div>
+        
+        <div class="topnav">
+            <a href="login.html">Login</a>
+            <a href="#contac">CREATE</a>
+            <a href="#about">MESSAGE</a>
+            <a href="#contac">HOME</a>
+            <div class="search-container">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Three-column layout -->
+        <div class="column-container">
+            <div class="column">
+                <!-- Content for the first column -->
+                <div class="user-profile">
+                    <h2> PROFILE</h2>
+                  <img src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\images\\prof.webp" alt="User Photo" class="user-photo">
+                  <div class="user-info">
+                    <p>User Name
+                    <br><i>@seeyeskay</i></p>
+                    <p>Designation: </p>
+                  </div>
+                  <p>
+                    <button class="btn-profile-view" onclick="window.location.href='profile.html'">View Profile</button>
+                    <button class="btn-profile-view" onclick="openModal()">New post</button>
+                    
+                </p>
+                
+                </div>
+            </div>
+
+    <div class="column">
+        <!-- Content for the second column -->
+        <h2>POSTS</h2>
+        <div class="post-dialog">
+            <div class="post-header">
+                <img src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\images\\profile1.jpeg" alt="Profile Picture">
+                <span class="username">Kaar</span>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="post-image">
+                <img src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\images\\post1.webp" alt="Post Image">
+            </div>
+
+            <div class="post-description">
+                <p>This is the post description. You can write anything you want here!</p>
+            </div>
+            <div class="post-actions">
+                <button class="like-btn"><i class="fa fa-heart"></i> Like</button>
+                <button class="comment-btn"><i class="fa fa-comment"></i> Comment</button>
+                <button class="share-btn"><i class="fa fa-share"></i> Share</button>
+            </div>
+        </div>
+
+        <div class="post-dialog">
+            <div class="post-header">
+                <img src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\images\\profile1.jpeg" alt="Profile Picture">
+                <span class="username">Kaar</span>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="post-image">
+                <img src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\images\\post2.avif" alt="Post Image">
+            </div>
+            <div class="post-description">
+                <p>This is the post description. You can write anything you want here!</p>
+            </div>
+            <div class="post-actions">
+                <button class="like-btn"><i class="fa fa-heart"></i> Like</button>
+                <button class="comment-btn"><i class="fa fa-comment"></i> Comment</button>
+                <button class="share-btn"><i class="fa fa-share"></i> Share</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="column">
+        <!-- Content for the third column -->
+       <H2>SUGGESTION LIST</H2>
+        <ul class="list-group list-group-light">
+            <li class="list-group-item">
+                <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" class="rounded-circle">
+                <div class="info">
+                    <p class="fw-bold mb-1">John Doe</p>
+                    <p class="text-muted mb-0">john.doe@gmail.com</p>
+                </div>
+                <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">View</a>
+            </li>
+            <li class="list-group-item">
+                <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt="">
+                <div class="info">
+                    <p class="fw-bold mb-1">Alex Ray</p>
+                    <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                </div>
+                <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">View</a>
+            </li>
+            <li class="list-group-item">
+                <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt="">
+                <div class="info">
+                    <p class="fw-bold mb-1">Kate Hunington</p>
+                    <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                </div>
+                <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">View</a>
+            </li>
+            <li class="list-group-item">
+                <img src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\images\\prof3.webp" class="rounded-circle">
+                <div class="info">
+                    <p class="fw-bold mb-1">Sarah Johnson</p>
+                    <p class="text-muted mb-0">sarah.johnson@example.com</p>
+                </div>
+                <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">View</a>
+            </li>
+            <li class="list-group-item">
+                <img src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\images\\prof4.webp" class="rounded-circle" alt="">
+                <div class="info">
+                    <p class="fw-bold mb-1">Michael Brown</p>
+                    <p class="text-muted mb-0">michael.brown@example.com</p>
+                </div>
+                <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">View</a>
+            </li>
+            <li class="list-group-item">
+                <img src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\images\\prof6.webp" class="rounded-circle" alt="">
+                <div class="info">
+                    <p class="fw-bold mb-1">Emily Smith</p>
+                    <p class="text-muted mb-0">emily.smith@example.com</p>
+                </div>
+                <a class="btn btn-link btn-rounded btn-sm" href="#" role="button">View</a>
+            </li>
+            
+        </ul>
+</div>
+        
+        </div>
+    </div>
+</div>
+    <!-- Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>New Post</h2>
+        <form id="postForm">
+            <label for="postDescription">Description:</label><br>
+            <textarea id="postDescription" name="postDescription" rows="4" cols="50"></textarea><br>
+            <label for="postImage">Select Image:</label><br>
+            <input type="file" id="postImage" name="postImage"><br><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</div>
+       
+<script src="C:\\Users\\karni\\OneDrive\\Desktop\\Internship\\BOB\\project\\js\\script.js"></script>        
+    
+    </body>
+</html>
